@@ -1,2 +1,2 @@
 # palindrome
-palindrome as part of the javascript onslaught
+Palindrome program for practising testing with mocha
