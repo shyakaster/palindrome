@@ -1,3 +1,5 @@
+
+module.exports = Phrase;
 //Modifies a String native object
 String.prototype.reverse = function reverseFunction(){
     //the first alternative preserves emoji characters in a string
@@ -16,19 +18,19 @@ function Phrase(content){
 }
 
 //Defines a translatedPhrase object
-function translatedPhrase(content, translation){
-    this.content = content;
-    this.translation = translation;
+// function translatedPhrase(content, translation){
+//     this.content = content;
+//     this.translation = translation;
 
-    this.processContent = function processContent(){
-        return this.translation.toLowerCase();
-    }
-} 
+//     this.processContent = function processContent(){
+//         return this.translation.toLowerCase();
+//     }
+// } 
 
-translatedPhrase.prototype = new Phrase();
+// translatedPhrase.prototype = new Phrase();
 
-String.prototype.palindrome = function palindrome(){
-    return new Phrase(this).palindrome();
-}
+// String.prototype.palindrome = function palindrome(){
+//     return new Phrase(this).palindrome();
+// }
 
 
