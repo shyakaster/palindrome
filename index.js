@@ -13,7 +13,12 @@ function Phrase(content){
         return this.letters().toLowerCase();
     }
     this.palindrome = function palindrome(){
+      if(this.letters()){
         return this.processContent() === this.processContent().reverse();
+      }else {
+        return false;
+      }
+
     }
     //Return the content without punctuation
     this.letters = function letters(){
@@ -21,5 +26,3 @@ function Phrase(content){
         return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
     }
 }
-
-
